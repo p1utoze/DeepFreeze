@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "deepfreeze"
+version = "0.1.0"
+description = ""
+authors = ["p1utoze <1ds21ai001@dsce.edu.in>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+matplotlib = "^3.9.2"
+scipy = "^1.14.1"
+h5py = "^3.12.1"
+oct2py = "^5.7.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
