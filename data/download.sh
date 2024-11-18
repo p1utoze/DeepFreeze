@@ -14,6 +14,6 @@ DATA_TYPE="jpg"                       # This is the file format extension type y
 
 for i in ${seasons[@]}; do         # Optionally you  can give a slice range for multi process extraction using multiple terminals like this: ${seasons[@]:I:N}
   url="https://data.cresis.ku.edu/data/rds/$i/$FOLDER_TYPE/"
-  wget -r -np --accept  $url
+  wget -r -np --accept $DATA_TYPE  $url                     # Optionally pass --reject-regex flag to exclude unwanted files download
   echo -e "${GREEN}Extraction for $i is completed! ${NC}" | tee -a completed_seasons.log
 done 
